@@ -12,7 +12,7 @@ import cucumber.api.java.en.When;
 public class LoginStepDefanition extends Base {
 	LoginPage lp;
 
-	// instance veriable or referance ceriable
+	// instance veriable or referance veriable
 	@Given("^user on facebook homepage$")
 	public void user_on_facebook_homepage() throws Throwable {
 		getDriver();
