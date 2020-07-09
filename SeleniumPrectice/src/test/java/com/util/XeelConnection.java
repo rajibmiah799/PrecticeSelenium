@@ -14,7 +14,7 @@ public class XeelConnection {
 		// FileInputStream is java class
 		FileInputStream fis = new FileInputStream("./ExcelFile/POST MAN.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
-		// WorkBook is class , WorkbookFactory is class, create() method
+		// WorkBook is class , WorkbookFactory is class, create() is  method
 		Sheet sh = wb.getSheet("sheet1");// Sheet is claa, Sheet import from ss.usermodel
 		String value = sh.getRow(1).getCell(1).getStringCellValue();
 		// getRow(), getCell(), GetStringCellValue are methods

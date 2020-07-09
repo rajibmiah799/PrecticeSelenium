@@ -41,5 +41,22 @@ public class ExpediaCalender {
 					By.xpath("(//div[@class='datepicker-cal-month']//table//tbody//tr[2]//td[2]//button)[1]")).click();
 
 		}
+		driver.findElement(By.xpath("//input[@id='flight-returning-hp-flight']")).click();
+
+		while (true) {
+			String month2 = "Oct 2020";
+			String mon = driver.findElement(By.xpath("//caption[@class='datepicker-cal-month-header']")).getText();
+			if (mon.equals(month2)) {
+				break;
+			} else {
+				driver.findElement(
+						By.xpath("//button[@class='datepicker-paging datepicker-next btn-paging btn-secondary next']"))
+						.click();
+				Thread.sleep(1000);
+			} // end if
+			driver.findElement(By.xpath("(//button[contains(@class,'datepicker-cal-date')])[59]")).click();
+
+		} // end while
+
 	}
 }

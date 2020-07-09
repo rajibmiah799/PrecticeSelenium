@@ -33,7 +33,7 @@ public class DragAndDrop {
 		// driver.switchTo().defaultContent();
 
 		driver.findElement(By.linkText("Resizable")).click();
-		driver.close();
+		//driver.close();
 //driver.navigate().refresh();
 	}
 

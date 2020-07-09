@@ -15,14 +15,15 @@ public class AlertPopUpWindow {
 		driver.get("https://nppes.cms.hhs.gov/#/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
+		
 		driver.findElement(By.xpath("//button[contains(text(),'ACCEPT')]")).click();
-		Thread.sleep(5000);
-		System.out.println(driver.switchTo().alert().getText());
+		// Thread.sleep(5000);
+		// System.out.println(driver.switchTo().alert().getText());
 		// get the text from pop up
-
 		Thread.sleep(3000);
 		driver.switchTo().alert().accept();
+		// accept method for accept ,ok
+		// dismiss method for decline, dismiss, cross.
 
 	}
 }
