@@ -1,6 +1,7 @@
 package com.stepdef;
 
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.common.Base;
 import com.pageobjectmodel.LoginPage;
@@ -40,6 +41,10 @@ public class LoginStepDefanition extends Base {
 
 	@Then("^user login successfully$")
 	public void user_login_successfully() throws Throwable {
+	// Assert is testNG class
+		Assert.assertEquals(driver.getTitle(), "(1) Facebook");
+		//Assert.assertEquals(String actual, String excepted)
+		//System.out.println(driver.getTitle());
 
 
 	}

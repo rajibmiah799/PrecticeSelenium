@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ListWebElementPrectice {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "./Browser/chromedriver.exe");
 		driver = new ChromeDriver();
@@ -23,6 +23,7 @@ public class ListWebElementPrectice {
 		List<WebElement> l = driver.findElements(By.xpath("//ul[contains(@id,'header-nav-bar')]//li"));
 		for (int i = 0; i < l.size(); i++) {
 			String s = l.get(i).getText();
+			Thread.sleep(3000);
 			driver.findElement(By.xpath("//ul[contains(@id,'header-nav-bar')]//li[5]")).click();
 			// conect parent to child
 
