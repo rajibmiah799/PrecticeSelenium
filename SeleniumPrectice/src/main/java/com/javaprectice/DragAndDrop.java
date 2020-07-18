@@ -1,5 +1,6 @@
 package com.javaprectice;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -10,7 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class DragAndDrop {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException, IOException {
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "./Browser/chromedriver.exe");
 		driver = new ChromeDriver();
@@ -28,12 +29,14 @@ public class DragAndDrop {
 		WebElement to = driver.findElement(By.xpath("//div[@id='droppable']"));
 
 		a.dragAndDrop(from, to).build().perform();
+		ScreenShort.Screens(driver, "raj");
 
 		driver.switchTo().parentFrame();
 		// driver.switchTo().defaultContent();
 
 		driver.findElement(By.linkText("Resizable")).click();
-		//driver.close();
+		ScreenShort.Screens(driver, "Test");// for screeshot we call screenshot class
+		driver.close();
 //driver.navigate().refresh();
 	}
 
