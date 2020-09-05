@@ -18,7 +18,7 @@ public class LoginStepDefanition extends Base {
 	public void user_on_facebook_homepage() throws Throwable {
 		getDriver();
 		lp = PageFactory.initElements(driver, LoginPage.class);
-          //PageFactory.initElements(webdriver driver, objectpage);
+		// PageFactory.initElements(webdriver driver, objectpage);
 	}
 
 	@When("^user enter \"([^\"]*)\"$")
@@ -41,11 +41,12 @@ public class LoginStepDefanition extends Base {
 
 	@Then("^user login successfully$")
 	public void user_login_successfully() throws Throwable {
-	// Assert is testNG class
+		// Assert is testNG class
 		Assert.assertEquals(driver.getTitle(), "(1) Facebook");
-		//Assert.assertEquals(String actual, String excepted)
-		//System.out.println(driver.getTitle());
+		// Assert.assertEquals(String actual, String excepted)
+		// System.out.println(driver.getTitle());
 
+		driver.close();
 
 	}
 

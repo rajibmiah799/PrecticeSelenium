@@ -1,28 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="10006" started-at="2020-07-14T11:02:01 EDT" finished-at="2020-07-14T11:02:11 EDT">
+  <suite name="Default suite" duration-ms="202" started-at="2020-08-29T20:30:36 EDT" finished-at="2020-08-29T20:30:36 EDT">
     <groups>
     </groups>
-    <test name="chrometest" duration-ms="9867" started-at="2020-07-14T11:02:01 EDT" finished-at="2020-07-14T11:02:10 EDT">
+    <test name="Default test" duration-ms="202" started-at="2020-08-29T20:30:36 EDT" finished-at="2020-08-29T20:30:36 EDT">
       <class name="com.common.CrossBrowserBase">
-        <test-method status="PASS" signature="getBrowser(java.lang.String)[pri:0, instance:com.common.CrossBrowserBase@76707e36]" name="getBrowser" duration-ms="9806" started-at="2020-07-14T11:02:01 EDT" finished-at="2020-07-14T11:02:10 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getBrowser -->
-      </class> <!-- com.common.CrossBrowserBase -->
-    </test> <!-- chrometest -->
-    <test name="gexkotest" duration-ms="76" started-at="2020-07-14T11:02:11 EDT" finished-at="2020-07-14T11:02:11 EDT">
-      <class name="com.common.CrossBrowserBase">
-        <test-method status="FAIL" signature="getBrowser(java.lang.String)[pri:0, instance:com.common.CrossBrowserBase@27a8c74e]" name="getBrowser" duration-ms="60" started-at="2020-07-14T11:02:11 EDT" finished-at="2020-07-14T11:02:11 EDT">
+        <test-method status="FAIL" signature="getBrowser(java.lang.String)[pri:0, instance:com.common.CrossBrowserBase@71bbf57e]" name="getBrowser" duration-ms="122" started-at="2020-08-29T20:30:36 EDT" finished-at="2020-08-29T20:30:36 EDT">
           <params>
             <param index="0">
               <value>
@@ -34,13 +19,13 @@
             <message>
               <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-JQI81VJ', ip: '10.67.105.193', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'DESKTOP-JQI81VJ', ip: '192.168.1.238', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: driver.version: FirefoxDriver]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-JQI81VJ', ip: '10.67.105.193', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+System info: host: 'DESKTOP-JQI81VJ', ip: '192.168.1.238', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: driver.version: FirefoxDriver
 at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:100)
 at java.util.Optional.orElseGet(Unknown Source)
@@ -84,6 +69,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- getBrowser -->
       </class> <!-- com.common.CrossBrowserBase -->
-    </test> <!-- gexkotest -->
-  </suite> <!-- Suite1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

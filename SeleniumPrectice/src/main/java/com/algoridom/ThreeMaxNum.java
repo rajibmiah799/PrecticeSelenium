@@ -14,11 +14,11 @@ public class ThreeMaxNum {
 				max2 = max1;
 				max1 = num[i];
 			} else if (num[i] > max2) {
-				max2 = max1;
-				max1 = num[i];
+				max3 = max2;
+				max2 = num[i];
 
 			} else if (num[i] > max3) {
-				max1 = num[i];
+				max3 = num[i];
 			} // end if
 		} // end for
 		System.out.println("max1 is " + max1);

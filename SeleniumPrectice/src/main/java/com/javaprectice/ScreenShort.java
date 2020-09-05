@@ -12,6 +12,7 @@ public class ScreenShort {
 
 	public static void Screens(WebDriver driver, String ss) throws IOException {
 		TakesScreenshot tkss = (TakesScreenshot)driver;// TakesScreenshot is selenium interface
+		// first I have to down cast webdriver variable to takesScreenshot
 		File fl = tkss.getScreenshotAs(OutputType.FILE);// getScreenshrotAs is a TakesScreenshot method
 		FileUtils.copyFile(fl, new File(ss+".png"));// coppyFile(File srcFile, File destFile)
 		// ".png" is type of screenshot file 
@@ -19,5 +20,3 @@ public class ScreenShort {
 	}
 
 	}
-
-

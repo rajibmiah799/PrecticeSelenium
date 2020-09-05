@@ -1,5 +1,7 @@
 package com.javaprectice;
 
+import java.util.Arrays;
+
 public class ReverseWordByWord {
 
 	public static void main(String[] args) {
@@ -7,8 +9,8 @@ public class ReverseWordByWord {
 		String[] word = s.split("\\s");
 		// "\\s" means space or " " and one space between double code
 
-		// System.out.println(Arrays.toString(word)); --- for see that sentence divided
-		// [I, love, java, language]
+		 System.out.println(Arrays.toString(word));// --- for see that sentence divided
+		 //[I, love, java, language]
 		String re =" ";
 		for (int i = 0; i <word.length; i++) {
 			String words = word[i];

@@ -23,11 +23,13 @@ public class ListWebElementPrectice {
 		List<WebElement> l = driver.findElements(By.xpath("//ul[contains(@id,'header-nav-bar')]//li"));
 		for (int i = 0; i < l.size(); i++) {
 			String s = l.get(i).getText();
-			Thread.sleep(3000);
-			driver.findElement(By.xpath("//ul[contains(@id,'header-nav-bar')]//li[5]")).click();
+			Thread.sleep(1000);
+			if(l.get(i).getText().contentEquals("Subscriptions")) {
+				l.get(i).click();
+			}
 			// conect parent to child
 
-			System.out.println(s);
+			  System.out.println(s);
 
 		}
 

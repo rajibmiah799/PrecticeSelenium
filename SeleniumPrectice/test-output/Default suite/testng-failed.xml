@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="browser" value="firefox"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testrunner.TestRunner">
+      <class name="com.common.CrossBrowserBase">
         <methods>
-          <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="getBrowser" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.testrunner.TestRunner -->
+      </class> <!-- com.common.CrossBrowserBase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

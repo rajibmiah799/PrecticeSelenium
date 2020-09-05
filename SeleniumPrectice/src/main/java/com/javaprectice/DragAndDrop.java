@@ -24,19 +24,19 @@ public class DragAndDrop {
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='demo-frame']")));
 		Actions a = new Actions(driver);
 		WebElement from = driver.findElement(By.xpath("//div[@id='draggable']"));
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 
 		WebElement to = driver.findElement(By.xpath("//div[@id='droppable']"));
 
 		a.dragAndDrop(from, to).build().perform();
-		ScreenShort.Screens(driver, "raj");
+		//ScreenShort.Screens(driver, "raj");
 
 		driver.switchTo().parentFrame();
 		// driver.switchTo().defaultContent();
 
 		driver.findElement(By.linkText("Resizable")).click();
-		ScreenShort.Screens(driver, "Test");// for screeshot we call screenshot class
-		driver.close();
+		//ScreenShort.Screens(driver, "Test");// for screeshot we call screenshot class
+		//driver.close();
 //driver.navigate().refresh();
 	}
 
