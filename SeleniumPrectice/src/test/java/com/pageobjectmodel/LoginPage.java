@@ -34,4 +34,5 @@ public class LoginPage {
 	public void Loginclick() {
 		clicklog.click();
 	}
+
 }

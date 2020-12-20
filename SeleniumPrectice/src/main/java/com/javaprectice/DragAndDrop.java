@@ -9,11 +9,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class DragAndDrop {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 		WebDriver driver;
-		System.setProperty("webdriver.chrome.driver", "./Browser/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "./Browser/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get("https://jqueryui.com/");
 		driver.manage().window().maximize();
@@ -35,8 +38,8 @@ public class DragAndDrop {
 		// driver.switchTo().defaultContent();
 
 		driver.findElement(By.linkText("Resizable")).click();
-		//ScreenShort.Screens(driver, "Test");// for screeshot we call screenshot class
-		//driver.close();
+		ScreenShort.Screens(driver, "Test");// for screeshot we call screenshot class
+		driver.close();
 //driver.navigate().refresh();
 	}
 

@@ -7,7 +7,7 @@
 			<class name="com.common.CrossBrowserBase" />
 		</classes>
 	</test>
-	<test name="gexkotest">
+	<test name="geto">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="com.common.CrossBrowserBase" />

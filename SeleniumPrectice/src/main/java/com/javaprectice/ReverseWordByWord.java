@@ -13,6 +13,7 @@ public class ReverseWordByWord {
 		 //[I, love, java, language]
 		String re =" ";
 		for (int i = 0; i <word.length; i++) {
+			//1st = intial condition, 2nd = stop condition, 3rd = increment or decriment
 			String words = word[i];
 			String reverse = "";
 			for (int j = words.length() - 1; j >= 0; j--) {

@@ -36,6 +36,7 @@ public class LoginStepDefanition extends Base {
 	@When("^user click on login$")
 	public void user_click_on_login() throws Throwable {
 		lp.Loginclick();
+	
 
 	}
 

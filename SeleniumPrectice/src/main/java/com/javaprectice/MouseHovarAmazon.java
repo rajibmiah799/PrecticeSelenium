@@ -9,11 +9,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class MouseHovarAmazon {
 
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver;
-		System.setProperty("webdriver.chrome.driver", "./Browser/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "./Browser/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get("https://www.amazon.com/");
 		Dimension d = new Dimension(1000, 1000);

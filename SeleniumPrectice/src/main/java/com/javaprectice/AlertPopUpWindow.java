@@ -6,11 +6,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class AlertPopUpWindow {
 
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver;
-		System.setProperty("webdriver.chrome.driver", "./Browser/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "./Browser/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get("https://nppes.cms.hhs.gov/#/");
 		driver.manage().window().maximize();
